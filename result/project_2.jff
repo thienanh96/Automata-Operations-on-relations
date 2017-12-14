@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>&#13;
+	<type>fa</type>&#13;
+	<automaton>&#13;
+		<!--The list of states.-->&#13;
+		<state id="9" name="0 merge 3,1 merge 2 merge 4,1 merge 3,2 merge 1 merge 5,2 merge 5,1 merge 4,2">&#13;
+			<x>235.0</x>&#13;
+			<y>53.0</y>&#13;
+			<initial/>&#13;
+			<final/>&#13;
+		</state>&#13;
+		<!--The list of transitions.-->&#13;
+		<transition>&#13;
+			<from>9</from>&#13;
+			<to>9</to>&#13;
+			<read>0</read>&#13;
+		</transition>&#13;
+		<transition>&#13;
+			<from>9</from>&#13;
+			<to>9</to>&#13;
+			<read>1</read>&#13;
+		</transition>&#13;
+	</automaton>&#13;
+</structure>

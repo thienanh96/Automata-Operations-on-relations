@@ -1,0 +1,22 @@
+{
+  "name": "automata",
+  "version": "1.0.0",
+  "description": "Group 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "123456"
+  ],
+  "author": "group 1 - thien anh",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "express": "^4.16.2",
+    "keypress": "^0.2.1",
+    "node-cmd": "^3.0.0",
+    "xml-parser": "^1.2.1",
+    "xml2js": "^0.4.19"
+  }
+}
