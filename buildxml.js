@@ -1,6 +1,7 @@
 const inspect = require('util').inspect
 const fs = require('fs');
 const xml2js = require('xml2js');
+const path = require('path');
 const { exec } = require('child_process');
 var builder = new xml2js.Builder();
 
@@ -17,11 +18,11 @@ require('./projection').component_1.then(project => {
     };
 
     var xml1 = builder.buildObject(jsonXml_project_1);
-    fs.writeFile("C:/Users/thien/OneDrive/Project/Automata/result/project_1.jff", xml1, function(err) {
+    fs.writeFile(path.resolve('./result/project_1.jff'), xml1, function(err) {
         if (err) {
             return console.log(err);
         }
-        exec('C:/Users/thien/Desktop/JFLAP_Thin.jar C:/Users/thien/OneDrive/Project/Automata/result/project_1.jff', (err, stdout, stderr) => {
+        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./result/project_1.jff'), (err, stdout, stderr) => {
             if (err) {
                 console.error(err);
                 return;
@@ -43,11 +44,11 @@ require('./projection').component_2.then(project => {
     };
 
     var xml2 = builder.buildObject(jsonXml_project_2);
-    fs.writeFile("C:/Users/thien/OneDrive/Project/Automata/result/project_2.jff", xml2, function(err) {
+    fs.writeFile(path.resolve('./result/project_2.jff'), xml2, function(err) {
         if (err) {
             return console.log(err);
         }
-        exec('C:/Users/thien/Desktop/JFLAP_Thin.jar C:/Users/thien/OneDrive/Project/Automata/result/project_2.jff', (err, stdout, stderr) => {
+        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./result/project_2.jff'), (err, stdout, stderr) => {
             if (err) {
                 console.error(err);
                 return;
@@ -69,11 +70,11 @@ require('./join').then(join => {
     };
 
     var xml = builder.buildObject(jsonXml_project);
-    fs.writeFile("C:/Users/thien/OneDrive/Project/Automata/result/join.jff", xml, function(err) {
+    fs.writeFile(path.resolve('./result/join.jff'), xml, function(err) {
         if (err) {
             return console.log(err);
         }
-        exec('C:/Users/thien/Desktop/JFLAP_Thin.jar C:/Users/thien/OneDrive/Project/Automata/result/join.jff', (err, stdout, stderr) => {
+        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./result/join.jff'), (err, stdout, stderr) => {
             if (err) {
                 console.error(err);
                 return;
@@ -95,11 +96,11 @@ require('./post').then(post => {
     };
 
     var xml = builder.buildObject(jsonXml_post);
-    fs.writeFile("C:/Users/thien/OneDrive/Project/Automata/result/post.jff", xml, function(err) {
+    fs.writeFile(path.resolve('./result/post.jff'), xml, function(err) {
         if (err) {
             return console.log(err);
         }
-        exec('C:/Users/thien/Desktop/JFLAP_Thin.jar C:/Users/thien/OneDrive/Project/Automata/result/post.jff', (err, stdout, stderr) => {
+        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./result/post.jff'), (err, stdout, stderr) => {
             if (err) {
                 console.error(err);
                 return;
@@ -121,11 +122,11 @@ require('./pre').then(pre => {
     };
 
     var xml = builder.buildObject(jsonXml_pre);
-    fs.writeFile("C:/Users/thien/OneDrive/Project/Automata/result/pre.jff", xml, function(err) {
+    fs.writeFile(path.resolve('./result/pre.jff'), xml, function(err) {
         if (err) {
             return console.log(err);
         }
-        exec('C:/Users/thien/Desktop/JFLAP_Thin.jar C:/Users/thien/OneDrive/Project/Automata/result/pre.jff', (err, stdout, stderr) => {
+        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./result/pre.jff'), (err, stdout, stderr) => {
             if (err) {
                 console.error(err);
                 return;

@@ -1,23 +1,60 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>&#13;
-	<type>fa</type>&#13;
-	<automaton>&#13;
-		<!--The list of states.-->&#13;
-		<state id="5" name="0 merge 1,2 merge 3 merge 4 merge 5">&#13;
-			<x>343.0</x>&#13;
-			<y>175.0</y>&#13;
-			<initial/>&#13;
-			<final/>&#13;
-		</state>&#13;
-		<!--The list of transitions.-->&#13;
-		<transition>&#13;
-			<from>5</from>&#13;
-			<to>5</to>&#13;
-			<read>0</read>&#13;
-		</transition>&#13;
-		<transition>&#13;
-			<from>5</from>&#13;
-			<to>5</to>&#13;
-			<read>1</read>&#13;
-		</transition>&#13;
-	</automaton>&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<structure>
+  <type>fa</type>
+  <automaton>
+    <state id="5" name="0 merge 1,2 merge 3 merge 4 merge 5">
+      <final/>
+      <initial/>
+    </state>
+    <transition>
+      <from>5</from>
+      <to>5</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>5</from>
+      <to>5</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>5</from>
+      <to>5</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>5</from>
+      <to>5</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>5</from>
+      <to>5</to>
+      <read>0</read>
+    </transition>
+    <transition>
+      <from>5</from>
+      <to>5</to>
+      <read>1</read>
+    </transition>
+    <transition>
+      <from>5</from>
+      <to>5</to>
+      <read>1</read>
+    </transition>
+    <transition>
+      <from>5</from>
+      <to>5</to>
+      <read>1</read>
+    </transition>
+    <transition>
+      <from>5</from>
+      <to>5</to>
+      <read>1</read>
+    </transition>
+    <transition>
+      <from>5</from>
+      <to>5</to>
+      <read>1</read>
+    </transition>
+  </automaton>
 </structure>
