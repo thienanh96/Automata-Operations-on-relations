@@ -20,4 +20,13 @@ Group 1:
 ## About algorithms
 ### Projection operation  
 ![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/project.PNG)  
-![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/padclosure.PNG)
+### Join operation
+![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/join.PNG)  
+### Post operation
+We only have to replace lines 7-8 of join's algorithm by this two line to get post's algorithm
+![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/post.PNG)  
+### Pre operation
+We only have to replace lines 7-8 of join's algorithm by this two line to get post's algorithm
+![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/pre.PNG)  
+### Pad closure function
+![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/padclosure.PNG)  
