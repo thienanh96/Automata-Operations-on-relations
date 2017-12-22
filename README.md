@@ -13,7 +13,7 @@ Group 1:
 1. Download and install [Nodejs](https://nodejs.org/en/).  
 2. Download this project and extract the zip file.  
 ## Usage  
-1. The .jff input files are in ```input``` folder, they are examples so you can replace them by others.  
+1. The ```.jff``` input files are in ```input``` folder, they are examples so you can replace them by others.  
 2. Go into project folder by command line , then type ```npm install xml2js``` to create ```node modules``` folder and download ```xml2js``` library
 2. Go into project folder by command line , then type ```node buildxml```
-3. The .jff output files will be created in ```result``` folder , they will be opened automatically with JFlap.  
+3. The ```.jff``` output files will be created in ```result``` folder , they will be opened automatically with JFlap.  
