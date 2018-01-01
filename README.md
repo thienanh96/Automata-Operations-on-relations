@@ -30,3 +30,14 @@ We only have to replace lines 7-8 of join's algorithm by this two line to get po
 ![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/pre.PNG)  
 ### Pad closure function
 ![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/padclosure.PNG)  
+### State minimization  
+1. Convert NFA to DFA  
+First we need to do this to implement the state minimization.  
+Refer to this [link](https://www.tutorialspoint.com/automata_theory/ndfa_to_dfa_conversion.htm) for the algorithm.  
+2. Remove unreachable states  
+First, we need to identify the reachable states  
+![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/unreachablestates.PNG)  
+Eventually, we remove the unreachable states  
+3. Merge the equivalent states  
+![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/lemma.PNG)  
+![GitHub Logo](https://github.com/thienanh96/Automata-Operations-on-relations/blob/master/markdown_images/equivalentalgorithm.PNG)  
