@@ -18,11 +18,11 @@ require('./projection').component_1.then(project => {
     };
 
     var xml1 = builder.buildObject(jsonXml_project_1);
-    fs.writeFile(path.resolve('./result/project_1.jff'), xml1, function(err) {
+    fs.writeFile(path.resolve('./output/project_1.jff'), xml1, function(err) {
         if (err) {
             return console.log(err);
         }
-        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./result/project_1.jff'), (err, stdout, stderr) => {
+        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./output/project_1.jff'), (err, stdout, stderr) => {
             if (err) {
                 console.error(err);
                 return;
@@ -44,11 +44,11 @@ require('./projection').component_2.then(project => {
     };
 
     var xml2 = builder.buildObject(jsonXml_project_2);
-    fs.writeFile(path.resolve('./result/project_2.jff'), xml2, function(err) {
+    fs.writeFile(path.resolve('./output/project_2.jff'), xml2, function(err) {
         if (err) {
             return console.log(err);
         }
-        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./result/project_2.jff'), (err, stdout, stderr) => {
+        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./output/project_2.jff'), (err, stdout, stderr) => {
             if (err) {
                 console.error(err);
                 return;
@@ -70,11 +70,11 @@ require('./join').then(join => {
     };
 
     var xml = builder.buildObject(jsonXml_project);
-    fs.writeFile(path.resolve('./result/join.jff'), xml, function(err) {
+    fs.writeFile(path.resolve('./output/join.jff'), xml, function(err) {
         if (err) {
             return console.log(err);
         }
-        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./result/join.jff'), (err, stdout, stderr) => {
+        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./output/join.jff'), (err, stdout, stderr) => {
             if (err) {
                 console.error(err);
                 return;
@@ -96,11 +96,11 @@ require('./post').then(post => {
     };
 
     var xml = builder.buildObject(jsonXml_post);
-    fs.writeFile(path.resolve('./result/post.jff'), xml, function(err) {
+    fs.writeFile(path.resolve('./output/post.jff'), xml, function(err) {
         if (err) {
             return console.log(err);
         }
-        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./result/post.jff'), (err, stdout, stderr) => {
+        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./output/post.jff'), (err, stdout, stderr) => {
             if (err) {
                 console.error(err);
                 return;
@@ -122,11 +122,11 @@ require('./pre').then(pre => {
     };
 
     var xml = builder.buildObject(jsonXml_pre);
-    fs.writeFile(path.resolve('./result/pre.jff'), xml, function(err) {
+    fs.writeFile(path.resolve('./output/pre.jff'), xml, function(err) {
         if (err) {
             return console.log(err);
         }
-        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./result/pre.jff'), (err, stdout, stderr) => {
+        exec(path.resolve('./JFLAP_Thin.jar') + ' ' + path.resolve('./output/pre.jff'), (err, stdout, stderr) => {
             if (err) {
                 console.error(err);
                 return;
